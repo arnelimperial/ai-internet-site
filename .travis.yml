@@ -14,5 +14,5 @@ before_script:
   - "yarn global add gatsby-cli"
 
 script:
-  - "gatsby build"
+  - "yarn build"
 
