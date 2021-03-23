@@ -12,6 +12,7 @@ cache:
 
 before_script:
   - "yarn global add gatsby-cli"
+  - "yarn develop"
 
 script:
   - "yarn build"
