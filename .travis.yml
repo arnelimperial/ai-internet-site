@@ -1,7 +1,6 @@
 language: node_js
 
 node_js:
-  - "lts/*"
   - "15"
 
 cache: yarn
@@ -14,5 +13,5 @@ before_script:
   - "yarn global add gatsby-cli"
 
 script:
-  - "yarn build"
+  - "gatsby build"
 
