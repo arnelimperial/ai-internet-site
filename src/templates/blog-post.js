@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 //import Img from "gatsby-image"
 import SEO from "../components/seo"
 //import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
-import { MDXProvider } from "@mdx-js/react"
 import { defineCustomElements as deckDeckGoHighLightElement } from "@deckdeckgo/highlight-code/dist/loader"
 
 deckDeckGoHighLightElement()
@@ -29,7 +28,7 @@ const BlogPost = props => {
   return (
    
       <Layout>
-         <MDXProvider>
+         
         <SEO title={props.data.contentfulBlogPost.title} />
 
         <div className="content">
@@ -43,9 +42,6 @@ const BlogPost = props => {
             }}
           ></article>
         </div>
-
-        </MDXProvider>
-
       </Layout>
    
   )

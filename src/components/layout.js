@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import { style } from "glamor"
+import { MDXProvider } from "@mdx-js/react"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +30,11 @@ const Layout = ({ children }) => {
       <div className="holder">
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-        <main>{children}</main>
+        <main>
+          <MDXProvider>
+            {children}
+          </MDXProvider>
+        </main>
         <footer className="mt-2 pb-3">
           © {new Date().getFullYear()}, Built with
           {` `}
