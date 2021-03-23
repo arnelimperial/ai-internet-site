@@ -27,9 +27,9 @@ export const query = graphql`
 
 const BlogPost = props => {
   return (
-    <MDXProvider>
+   
       <Layout>
-
+         <MDXProvider>
         <SEO title={props.data.contentfulBlogPost.title} />
 
         <div className="content">
@@ -44,10 +44,10 @@ const BlogPost = props => {
           ></article>
         </div>
 
-
+        </MDXProvider>
 
       </Layout>
-    </MDXProvider>
+   
   )
 }
 

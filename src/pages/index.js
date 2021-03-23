@@ -29,8 +29,9 @@ const IndexPage = () => {
     `
   )
   return (
-    <MDXProvider>
+   
       <Layout>
+         <MDXProvider>
         <SEO title="Home" />
         <h2 className="draft">This draft ...</h2>
         <p css={{ fontSize: `18px`, color: `#778088` }}><strong>A compilation of insights, builds, start-off and anything under the sun.</strong></p>
@@ -54,9 +55,10 @@ const IndexPage = () => {
           <Link to="/page-2/">Go to page 2</Link> <br />
           <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
         </p>
+        </MDXProvider>
       </Layout>
 
-    </MDXProvider>
+    
 
 
 
