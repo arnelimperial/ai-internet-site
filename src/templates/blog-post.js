@@ -4,10 +4,11 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 //import Img from "gatsby-image"
 import SEO from "../components/seo"
-//import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
-import { defineCustomElements as deckDeckGoHighLightElement } from "@deckdeckgo/highlight-code/dist/loader"
+import { MDXProvider } from "@mdx-js/react"
+import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
+//import { defineCustomElements as deckDeckGoHighLightElement } from "@deckdeckgo/highlight-code/dist/loader"
 
-deckDeckGoHighLightElement()
+//deckDeckGoHighLightElement()
 
 export const query = graphql`
   query($slug: String!) {
@@ -19,16 +20,14 @@ export const query = graphql`
           html
         }
       }
-      
     }
   }
 `
 
 const BlogPost = props => {
   return (
-   
-      <Layout>
-         
+    <Layout>
+      <MDXProvider>
         <SEO title={props.data.contentfulBlogPost.title} />
 
         <div className="content">
@@ -36,14 +35,16 @@ const BlogPost = props => {
           <p className="meta">
             Last updated {props.data.contentfulBlogPost.updatedAt}
           </p>
-          <article className="article"
+          <article
+            className="article"
             dangerouslySetInnerHTML={{
-              __html: props.data.contentfulBlogPost.body.childMarkdownRemark.html,
+              __html:
+                props.data.contentfulBlogPost.body.childMarkdownRemark.html,
             }}
           ></article>
         </div>
-      </Layout>
-   
+      </MDXProvider>
+    </Layout>
   )
 }
 

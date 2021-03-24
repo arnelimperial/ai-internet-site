@@ -69,10 +69,9 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-highlight-code`,
+            resolve: `gatsby-remark-vscode`,
             options: {
-              terminal: 'carbon',
-              theme: 'chalkboard'
+              theme: 'Dark+ (default dark)'
             }
           },
           {
