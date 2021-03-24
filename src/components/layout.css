@@ -13,7 +13,7 @@ body {
     font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-code {
+/* code {
   background: transparent;
   font-size: 90%;
   font-family: "Play",sans-serif;
@@ -28,7 +28,9 @@ pre {
 
 pre > code {
   padding: 1rem 1.5rem;
-}
+} */
+
+
 
 .holder {
   margin: 0 auto;

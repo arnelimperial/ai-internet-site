@@ -1,6 +1,12 @@
 # ai_website
 Arnel Imperial's personal and portfolio internet site.
 
+
+![Travis (.org)](https://img.shields.io/travis/arnelimperial/ai-internet-site)
+![GitHub last commit](https://img.shields.io/github/last-commit/arnelimperial/ai-internet-site)
+![GitHub issues](https://img.shields.io/github/issues/arnelimperial/ai-internet-site)
+![GitHub](https://img.shields.io/github/license/arnelimperial/ai-internet-site)
+
 ## CLI Commands
 
 ``` bash
