@@ -3,7 +3,8 @@ Arnel Imperial's personal and portfolio internet site.
 
 
 ![Travis (.org)](https://img.shields.io/travis/arnelimperial/ai-internet-site?logo=travis-ci&style=for-the-badge)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b9c41c37-d1c1-41a8-80ca-b432f14b9605/deploy-status)](https://app.netlify.com/sites/jolly-tesla-2bdc39/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b9c41c37-d1c1-41a8-80ca-b432f14b9605/deploy-status)](https://app.netlify.com/sites/jolly-tesla-2bdc39/deploys?style=for-the-badge)
+![Netlify](https://img.shields.io/netlify/b9c41c37-d1c1-41a8-80ca-b432f14b9605?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/arnelimperial/ai-internet-site?color=informational&style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues/arnelimperial/ai-internet-site?color=important&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/arnelimperial/ai-internet-site?color=9cf&style=for-the-badge)
